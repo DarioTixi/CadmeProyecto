@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cadmeModelStoreContainer" CdmEntityContainer="cadmeEntities">
+    <EntitySetMapping Name="usados041">
+      <EntityTypeMapping TypeName="cadmeModel.usados041">
+        <MappingFragment StoreEntitySet="usados041">
+          <ScalarProperty Name="cod_emp" ColumnName="cod_emp" />
+          <ScalarProperty Name="nom_emp" ColumnName="nom_emp" />
+          <ScalarProperty Name="rep_emp" ColumnName="rep_emp" />
+          <ScalarProperty Name="ruc_emp" ColumnName="ruc_emp" />
+          <ScalarProperty Name="ciu_emp" ColumnName="ciu_emp" />
+          <ScalarProperty Name="dir_emp" ColumnName="dir_emp" />
+          <ScalarProperty Name="tel_emp" ColumnName="tel_emp" />
+          <ScalarProperty Name="mar_chasis" ColumnName="mar_chasis" />
+          <ScalarProperty Name="mode_chasis" ColumnName="mode_chasis" />
+          <ScalarProperty Name="anio_chasis" ColumnName="anio_chasis" />
+          <ScalarProperty Name="vin_chasis" ColumnName="vin_chasis" />
+          <ScalarProperty Name="serie_motor_chasis" ColumnName="serie_motor_chasis" />
+          <ScalarProperty Name="mar_carr" ColumnName="mar_carr" />
+          <ScalarProperty Name="mod_carr" ColumnName="mod_carr" />
+          <ScalarProperty Name="anio_carr" ColumnName="anio_carr" />
+          <ScalarProperty Name="operadora" ColumnName="operadora" />
+          <ScalarProperty Name="num_asie_carr" ColumnName="num_asie_carr" />
+          <ScalarProperty Name="esta_carr" ColumnName="esta_carr" />
+          <ScalarProperty Name="tip_serv_carr" ColumnName="tip_serv_carr" />
+          <ScalarProperty Name="propietario" ColumnName="propietario" />
+          <ScalarProperty Name="ced_pro" ColumnName="ced_pro" />
+          <ScalarProperty Name="ope1" ColumnName="ope1" />
+          <ScalarProperty Name="disco_ope" ColumnName="disco_ope" />
+          <ScalarProperty Name="prov_matri_ope" ColumnName="prov_matri_ope" />
+          <ScalarProperty Name="fec_rev_est" ColumnName="fec_rev_est" />
+          <ScalarProperty Name="fec_env_est" ColumnName="fec_env_est" />
+          <ScalarProperty Name="responsable" ColumnName="responsable" />
+          <ScalarProperty Name="fec_rev_ter" ColumnName="fec_rev_ter" />
+          <ScalarProperty Name="fec_env_ter" ColumnName="fec_env_ter" />
+          <ScalarProperty Name="res_res" ColumnName="res_res" />
+          <ScalarProperty Name="num_ord1" ColumnName="num_ord1" />
+          <ScalarProperty Name="valor_pagar" ColumnName="valor_pagar" />
+          <ScalarProperty Name="num_fact1" ColumnName="num_fact1" />
+          <ScalarProperty Name="pago_terminado" ColumnName="pago_terminado" />
+          <ScalarProperty Name="forma_pago1" ColumnName="forma_pago1" />
+          <ScalarProperty Name="mes_fact" ColumnName="mes_fact" />
+          <ScalarProperty Name="valor_pagar2" ColumnName="valor_pagar2" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="deb_env" ColumnName="deb_env" />
+          <ScalarProperty Name="accion_envio" ColumnName="accion_envio" />
+          <ScalarProperty Name="dias_pasados" ColumnName="dias_pasados" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

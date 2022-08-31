@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="cadmeModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="secretaria">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="rol" Type="int" Nullable="false" />
+          <Property Name="Usuario" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="clave" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usados041">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="cod_emp" Type="varchar" MaxLength="10" />
+          <Property Name="nom_emp" Type="varchar" MaxLength="65" />
+          <Property Name="rep_emp" Type="varchar" MaxLength="30" />
+          <Property Name="ruc_emp" Type="varchar" MaxLength="14" />
+          <Property Name="ciu_emp" Type="varchar" MaxLength="12" />
+          <Property Name="dir_emp" Type="varchar" MaxLength="71" />
+          <Property Name="tel_emp" Type="varchar" MaxLength="13" />
+          <Property Name="mar_chasis" Type="varchar" MaxLength="7" />
+          <Property Name="mode_chasis" Type="varchar" MaxLength="32" />
+          <Property Name="anio_chasis" Type="varchar" MaxLength="4" />
+          <Property Name="vin_chasis" Type="varchar" MaxLength="17" />
+          <Property Name="serie_motor_chasis" Type="varchar" MaxLength="11" />
+          <Property Name="mar_carr" Type="varchar" MaxLength="7" />
+          <Property Name="mod_carr" Type="varchar" MaxLength="32" />
+          <Property Name="anio_carr" Type="varchar" MaxLength="4" />
+          <Property Name="operadora" Type="varchar" MaxLength="12" />
+          <Property Name="num_asie_carr" Type="varchar" MaxLength="11" />
+          <Property Name="esta_carr" Type="varchar" MaxLength="9" />
+          <Property Name="tip_serv_carr" Type="varchar" MaxLength="27" />
+          <Property Name="propietario" Type="varchar" MaxLength="65" />
+          <Property Name="ced_pro" Type="varchar" MaxLength="15" />
+          <Property Name="ope1" Type="varchar" MaxLength="65" />
+          <Property Name="disco_ope" Type="varchar" MaxLength="6" />
+          <Property Name="prov_matri_ope" Type="varchar" MaxLength="9" />
+          <Property Name="fec_rev_est" Type="varchar" MaxLength="10" />
+          <Property Name="fec_env_est" Type="varchar" MaxLength="10" />
+          <Property Name="responsable" Type="varchar" MaxLength="10" />
+          <Property Name="fec_rev_ter" Type="varchar" MaxLength="10" />
+          <Property Name="fec_env_ter" Type="varchar" MaxLength="10" />
+          <Property Name="res_res" Type="varchar" MaxLength="17" />
+          <Property Name="num_ord1" Type="varchar" MaxLength="3" />
+          <Property Name="valor_pagar" Type="varchar" MaxLength="3" />
+          <Property Name="num_fact1" Type="varchar" MaxLength="4" />
+          <Property Name="pago_terminado" Type="varchar" MaxLength="2" />
+          <Property Name="forma_pago1" Type="varchar" MaxLength="8" />
+          <Property Name="mes_fact" Type="varchar" MaxLength="7" />
+          <Property Name="valor_pagar2" Type="varchar" MaxLength="3" />
+          <Property Name="observacion" Type="varchar" MaxLength="10" />
+          <Property Name="deb_env" Type="varchar" MaxLength="10" />
+          <Property Name="accion_envio" Type="varchar" MaxLength="7" />
+          <Property Name="dias_pasados" Type="varchar" MaxLength="10" />
+          <Property Name="id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="cadmeModelStoreContainer">
+          <EntitySet Name="secretaria" EntityType="Self.secretaria" Schema="cadme" store:Type="Tables" />
+          <EntitySet Name="usados041" EntityType="Self.usados041" Schema="cadme" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="cadmeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="usados041">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="cod_emp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="nom_emp" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+          <Property Name="rep_emp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ruc_emp" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="ciu_emp" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="dir_emp" Type="String" MaxLength="71" FixedLength="false" Unicode="false" />
+          <Property Name="tel_emp" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+          <Property Name="mar_chasis" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="mode_chasis" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="anio_chasis" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="vin_chasis" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="serie_motor_chasis" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="mar_carr" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="mod_carr" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="anio_carr" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="operadora" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="num_asie_carr" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="esta_carr" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="tip_serv_carr" Type="String" MaxLength="27" FixedLength="false" Unicode="false" />
+          <Property Name="propietario" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+          <Property Name="ced_pro" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="ope1" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+          <Property Name="disco_ope" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="prov_matri_ope" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="fec_rev_est" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="fec_env_est" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="responsable" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="fec_rev_ter" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="fec_env_ter" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="res_res" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+          <Property Name="num_ord1" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="valor_pagar" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="num_fact1" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="pago_terminado" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="forma_pago1" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="mes_fact" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="valor_pagar2" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="observacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="deb_env" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="accion_envio" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="dias_pasados" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="cadmeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="usados041" EntityType="Self.usados041" />
+          <EntitySet Name="secretaria" EntityType="cadmeModel.secretaria" />
+        </EntityContainer>
+        <EntityType Name="secretaria">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="rol" Type="Int32" Nullable="false" />
+          <Property Name="Usuario" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="clave" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="cadmeModelStoreContainer" CdmEntityContainer="cadmeEntities">
+          <EntitySetMapping Name="usados041">
+            <EntityTypeMapping TypeName="cadmeModel.usados041">
+              <MappingFragment StoreEntitySet="usados041">
+                <ScalarProperty Name="cod_emp" ColumnName="cod_emp" />
+                <ScalarProperty Name="nom_emp" ColumnName="nom_emp" />
+                <ScalarProperty Name="rep_emp" ColumnName="rep_emp" />
+                <ScalarProperty Name="ruc_emp" ColumnName="ruc_emp" />
+                <ScalarProperty Name="ciu_emp" ColumnName="ciu_emp" />
+                <ScalarProperty Name="dir_emp" ColumnName="dir_emp" />
+                <ScalarProperty Name="tel_emp" ColumnName="tel_emp" />
+                <ScalarProperty Name="mar_chasis" ColumnName="mar_chasis" />
+                <ScalarProperty Name="mode_chasis" ColumnName="mode_chasis" />
+                <ScalarProperty Name="anio_chasis" ColumnName="anio_chasis" />
+                <ScalarProperty Name="vin_chasis" ColumnName="vin_chasis" />
+                <ScalarProperty Name="serie_motor_chasis" ColumnName="serie_motor_chasis" />
+                <ScalarProperty Name="mar_carr" ColumnName="mar_carr" />
+                <ScalarProperty Name="mod_carr" ColumnName="mod_carr" />
+                <ScalarProperty Name="anio_carr" ColumnName="anio_carr" />
+                <ScalarProperty Name="operadora" ColumnName="operadora" />
+                <ScalarProperty Name="num_asie_carr" ColumnName="num_asie_carr" />
+                <ScalarProperty Name="esta_carr" ColumnName="esta_carr" />
+                <ScalarProperty Name="tip_serv_carr" ColumnName="tip_serv_carr" />
+                <ScalarProperty Name="propietario" ColumnName="propietario" />
+                <ScalarProperty Name="ced_pro" ColumnName="ced_pro" />
+                <ScalarProperty Name="ope1" ColumnName="ope1" />
+                <ScalarProperty Name="disco_ope" ColumnName="disco_ope" />
+                <ScalarProperty Name="prov_matri_ope" ColumnName="prov_matri_ope" />
+                <ScalarProperty Name="fec_rev_est" ColumnName="fec_rev_est" />
+                <ScalarProperty Name="fec_env_est" ColumnName="fec_env_est" />
+                <ScalarProperty Name="responsable" ColumnName="responsable" />
+                <ScalarProperty Name="fec_rev_ter" ColumnName="fec_rev_ter" />
+                <ScalarProperty Name="fec_env_ter" ColumnName="fec_env_ter" />
+                <ScalarProperty Name="res_res" ColumnName="res_res" />
+                <ScalarProperty Name="num_ord1" ColumnName="num_ord1" />
+                <ScalarProperty Name="valor_pagar" ColumnName="valor_pagar" />
+                <ScalarProperty Name="num_fact1" ColumnName="num_fact1" />
+                <ScalarProperty Name="pago_terminado" ColumnName="pago_terminado" />
+                <ScalarProperty Name="forma_pago1" ColumnName="forma_pago1" />
+                <ScalarProperty Name="mes_fact" ColumnName="mes_fact" />
+                <ScalarProperty Name="valor_pagar2" ColumnName="valor_pagar2" />
+                <ScalarProperty Name="observacion" ColumnName="observacion" />
+                <ScalarProperty Name="deb_env" ColumnName="deb_env" />
+                <ScalarProperty Name="accion_envio" ColumnName="accion_envio" />
+                <ScalarProperty Name="dias_pasados" ColumnName="dias_pasados" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="secretaria">
+            <EntityTypeMapping TypeName="cadmeModel.secretaria">
+              <MappingFragment StoreEntitySet="secretaria">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="clave" ColumnName="clave" />
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="rol" ColumnName="rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

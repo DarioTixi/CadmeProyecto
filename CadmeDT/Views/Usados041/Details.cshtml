@@ -1,0 +1,292 @@
+﻿@model CadmeDT.Models.usados041
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalles</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <hr/>
+    <h4 class="text-center">Usados 041</h4>
+    <hr />
+    <table class="table table-bordered">
+        <tr class="table-dark">
+            <th>
+                Codigo
+            </th>
+            <th>
+                Empresa
+            </th>
+            <th>
+                Representante
+            </th>
+            <th>
+                Ruc
+            </th>
+            <th>
+                Ciudad
+            </th>
+            <th>
+                Direccion
+            </th>
+            <th>
+                Telefono
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Modelo
+            </th>
+            <th>
+                Año
+            </th>
+            <th>
+                Vin Chas
+            </th>
+            <th>
+                Serie Motor
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Modelo
+            </th>
+            <th>
+                Año
+            </th>
+            <th>
+                OP
+            </th>
+            <th>
+                Numero de Asientos
+            </th>
+            <th>
+                Estado de Revision
+            </th>
+            <th>
+                Tipo de Servicio
+            </th>
+            <th>
+                Propietario
+            </th>
+            <th>
+                Cedula
+            </th>
+            <th>
+                Operadora
+            </th>
+            <th>
+                Disco
+            </th>
+            <th>
+                Provincia de Matriculacion
+            </th>
+            <th>
+                Fecha de Revision Estructura
+            </th>
+            <th>
+                Fecha de Envio Estructura
+            </th>
+            <th>
+                Responsable
+            </th>
+            <th>
+                Fecha de Revision Terminado
+            </th>
+            <th>
+                Fecha Envio Terminado
+            </th>
+            <th>
+                Responsable
+            </th>          
+            <th>
+                # Orden de Pago
+            </th>
+            <th>
+                Valor a pagar ($)
+            </th>
+            <th>
+                # Factura
+            </th>
+            <th>
+                Pagado terminado
+            </th>
+            <th>
+                Forma de pago
+            </th>
+            <th>
+                Mes de facturacion
+            </th>
+            <th>
+                Valor pagado($)
+            </th>
+            <th>
+                Observaciones
+            </th>
+            <th>
+                Debe enviarse
+            </th>
+            <th>
+                Accion
+            </th>
+            <th>
+                Dias pasados
+            </th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.cod_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.nom_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.rep_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ruc_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ciu_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.dir_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.tel_emp)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mar_chasis)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mode_chasis)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.anio_chasis)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.vin_chasis)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.serie_motor_chasis)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mar_carr)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mod_carr)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.anio_carr)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.operadora)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.num_asie_carr)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.esta_carr)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.tip_serv_carr)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.propietario)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ced_pro)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.ope1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.disco_ope)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.prov_matri_ope)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.fec_rev_est)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.fec_env_est)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.responsable)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.fec_rev_ter)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.fec_env_ter)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.res_res)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(model => model.num_ord1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.valor_pagar)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.num_fact1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.pago_terminado)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.forma_pago1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.mes_fact)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.valor_pagar2)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.observacion)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.deb_env)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.accion_envio)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.dias_pasados)
+
+            </td>
+            <td>
+                <br />
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        @Html.ActionLink("Editar", "Edit", new { id = Model.id }, new { @class = "btn btn-outline-success" })
+                    </div>
+                    <br />
+                    <br />
+                    <div class="col-sm-10">
+                        @Html.ActionLink("Eliminar", "Delete", new { id = Model.id }, new { @class = "btn btn-outline-danger" })
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <p>
+              @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

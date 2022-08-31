@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cadmeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="usados041">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="cod_emp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="nom_emp" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="rep_emp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ruc_emp" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="ciu_emp" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="dir_emp" Type="String" MaxLength="71" FixedLength="false" Unicode="false" />
+    <Property Name="tel_emp" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="mar_chasis" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="mode_chasis" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="anio_chasis" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="vin_chasis" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="serie_motor_chasis" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="mar_carr" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="mod_carr" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="anio_carr" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="operadora" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="num_asie_carr" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="esta_carr" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="tip_serv_carr" Type="String" MaxLength="27" FixedLength="false" Unicode="false" />
+    <Property Name="propietario" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="ced_pro" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ope1" Type="String" MaxLength="65" FixedLength="false" Unicode="false" />
+    <Property Name="disco_ope" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="prov_matri_ope" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="fec_rev_est" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fec_env_est" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="responsable" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fec_rev_ter" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="fec_env_ter" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="res_res" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="num_ord1" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="valor_pagar" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="num_fact1" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="pago_terminado" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="forma_pago1" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="mes_fact" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="valor_pagar2" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="observacion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="deb_env" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="accion_envio" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="dias_pasados" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="cadmeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="usados041" EntityType="Self.usados041" />
+  </EntityContainer>
+</Schema>
